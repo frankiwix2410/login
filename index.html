@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <form class="form">
+            <h1>Iniciar Seccion</h1>
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre">
+
+            <label for="apellido">Apedillo:</label>
+            <input type="text" id="apellido"> <br>
+
+            <label for="nomUsuario">Nombre de Usuario:</label>
+            <input type="text" id="usuario"> <br>
+
+            <label for="correo">Correo Electronico:</label>
+            <input type="email" id="correo"> <br>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña"> <br>
+
+            <div class="form-group">
+                <input type="checkbox" id="terms" name="terms">
+                <label for="terms">Acepto los términos, condiciones y políticas.</label>
+            </div>
+            <button type="button" onclick="mostrarDatos()">Iniciar Seccion</button>
+        </form>
+
+        <script>
+            function mostrarDatos() {
+                
+            const nombre = document.getElementById('nombre').value;
+            const apellido = document.getElementById('apellido').value;
+            const username = document.getElementById('usuario').value;
+            const email = document.getElementById('correo').value;
+            const password = document.getElementById('contraseña').value;
+            
+            alert("INFORMACION INGRESADA\nNombre: " +nombre+"\nApellido: "+apellido+"\nUsuario: "+username+"\nCorreo: "+email)
+        }
+        </script>
+</body>
+</html>
